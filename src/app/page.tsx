@@ -2,7 +2,7 @@
 
 import Card from "@/app/components/dashboard/Card";
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
-import { getMemes } from "@/app/services/memeService";
+import { getMemes } from "@/lib/services/memeService";
 import { useState, useEffect } from "react";
 import LoadingSkeleton from "@/app/components/dashboard/LoadingSkeleton";
 

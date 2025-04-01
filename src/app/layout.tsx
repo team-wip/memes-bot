@@ -24,9 +24,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Box sx={{ display: 'flex' }}>
             <SideMenu />
             <AppNavbar />
-            {/* Main content */}
-            <Box
-              component="main">
               <Stack
                 spacing={2}
                 sx={{
@@ -34,12 +31,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   mx: 3,
                   pb: 5,
                   mt: { xs: 8, md: 0 },
+                  width: '100%',
                 }}
               >
                 <Header />
                 {children}
               </Stack>
-            </Box>
           </Box>
           </ThemeProvider>
         </AppRouterCacheProvider>

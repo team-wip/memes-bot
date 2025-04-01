@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Name is required" }, { status: 400 });
     }
     const newTag = await addTag(name);
-    return NextResponse.json(newTag);
+    return NextResponse.json(newTag[0]);
   } catch (error) {
     return NextResponse.json({ error: `${error}` }, { status: 500 });
   }
