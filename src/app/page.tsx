@@ -1,10 +1,10 @@
 "use client";
 
-import Card from "@/app/components/dashboard/Card";
+import Card from "@/components/dashboard/Card";
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import { getMemes } from "@/lib/services/memeService";
 import { useState, useEffect } from "react";
-import LoadingSkeleton from "@/app/components/dashboard/LoadingSkeleton";
+import LoadingSkeleton from "@/components/dashboard/LoadingSkeleton";
 
 export default function Page() {
   const [memes, setMemes] = useState([]);

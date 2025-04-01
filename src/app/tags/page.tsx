@@ -1,4 +1,4 @@
-import TagList from "@/app/components/tags/List";
+import TagList from "@/components/tags/List";
 
 export default function TagsPage() {
   return (

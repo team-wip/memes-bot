@@ -70,6 +70,7 @@ export default function Form() {
 
       const data = await response.json();
       console.log(data);
+      return;
     } catch (error) {
       console.error('Error:', error);
     }

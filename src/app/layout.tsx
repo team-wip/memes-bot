@@ -1,11 +1,11 @@
-import '@/app/styles/globals.css';
+import '@/styles/globals.css';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { Roboto } from 'next/font/google';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '@/app/styles/theme';
-import AppNavbar from '@/app/components/layout/AppNavbar';
-import Header from '@/app/components/layout/Header';
-import SideMenu from '@/app/components/layout/SideMenu';
+import theme from '@/styles/theme';
+import AppNavbar from '@/components/layout/AppNavbar';
+import Header from '@/components/layout/Header';
+import SideMenu from '@/components/layout/SideMenu';
 import { Box, Stack } from '@mui/material';
 
 const roboto = Roboto({

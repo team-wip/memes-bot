@@ -1,4 +1,4 @@
-import Form from "@/app/components/addMeme/Form";
+import Form from "@/components/addMeme/Form";
 
 export default function AddMemePage() {
   return (
