@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  pageExtensions: ['tsx', 'ts', 'jsx', 'js'], // Extensions reconnues pour les pages
-  /* config options here */
+  webpack: (config, options) => {
+      config.module.rules.push({
+        test: /\.node/,
+        use: 'node-loader'
+      })
+   
+      return config
+    },
 };
 
 export default nextConfig;
