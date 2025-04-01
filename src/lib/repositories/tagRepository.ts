@@ -1,5 +1,5 @@
-import { db } from "@/app/db";
-import { tags } from "@/app/db/schemas";
+import { db } from "@/lib/db";
+import { tags } from "@/lib/db/schemas";
 
 export const getTags = async () => {
   return db.select().from(tags);

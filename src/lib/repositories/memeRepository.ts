@@ -1,5 +1,5 @@
-import { db } from "@/app/db";
-import { memes } from "@/app/db/schemas";
+import { db } from "@/lib/db";
+import { memes } from "@/lib/db/schemas";
 
 export const getMemes = async () => {
   return db.select().from(memes);
